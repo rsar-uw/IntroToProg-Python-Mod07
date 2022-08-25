@@ -95,7 +95,17 @@ Flow #3 – No change + Save: User saves data (without making changes)
 
 #### Open file, Display data
 
+*Requirement 1: Allow program to open default output file.*
 
+*Requirement 2: Allow program to display current data to user in human-readable format.*
+
+The program begins by importing the pickle module: import pickle, which is needed for using the pickle function to ‘load’ the data from the file.
+
+The program begins by importing the pickle module: import pickle, which is needed for using the pickle function to ‘load’ the data from the file.
+
+`vip_lst = read_data_from_file(working_file_str=default_file_str)`
+
+The program calls the function `read_data_from_file()` where the string value (filename) assigned to the `default_file_str` variable is passed to the parameter `working_file_str`. The `vip_lst` list-variable is assigned to the output of the function.
 
 #### Menu
 
