@@ -726,9 +726,9 @@ For the purpose of this assignment, testing is performed in PyCharm IDE.
 
 Open PyCharm
 
-PyCharm > File > Open > directory path > A07-RSar.py
+  * PyCharm > File > Open > directory path > A07-RSar.py
 
-PyCharm > Run > “A07-RSar”
+  * PyCharm > Run > “A07-RSar”
 
 For this assignment and based on the limitations placed on the inputs of the user, I intend to limit my test cases to expected errors and a few valid input types.
 
@@ -798,13 +798,13 @@ For the purpose of this assignment, execution is done via the Terminal which sim
 
 Open Terminal
 
-Enter the following command: `python3 [file path][file name]`
+  * Enter the following command: `python3 [file path][file name]`
 
 Where:
 
-File path: `/Users/rex/Documents/_PythonClass/Module07/A07RSarabia`
+  * File path: `/Users/rex/Documents/_PythonClass/Module07/A07RSarabia`
 
-File name: `A07-RSar.py`
+  * File name: `A07-RSar.py`
 
 Re-perform test procedures. For this assignment, the data inputted into default data file has been erased and so the file is null.
 
@@ -867,6 +867,7 @@ Add data
 Using the same input values, produced the same results as testing for both error messages of invalid input as well as correctly formatted and stored outputs of valid user inputs.
 
 ## Summary
+
 Similar to preceding assignments, I thought this week’s assignment was a significant step up in complexity and challenge. Despite the program functionality being stripped down from the prior assignment, I can confirm the feeling “60% of code is exception handling”. At least, for me, it sure felt that way. Unforeseen (and highly-irregular) opportunities over this past weekend may have also effectively compressed my available time for this assignment. I think the code structures and frameworks that were provided as part of prior assignments were helpful. One challenging (and personally, frustrating) aspect of this assignment was the reliance on self-research to learn the level of coding needed to adapt prior assignments’ code. I will surely appreciate the “assignment answers” example for this module’s lessons for future reference.
 
 
