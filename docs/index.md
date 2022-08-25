@@ -68,19 +68,30 @@ Module: Add
 5.	Exception catching
 
 Module: Load
-6.	Open default output file
-7.	Read raw data from default output file
-8.	Display data from default output file
-9.	Exception catching
+1.	Open default output file
+2.	Read raw data from default output file
+3.	Display data from default output file
+4.	Exception catching
 
 Module: Quit
-10.	Exit program
-11.	Check if changes to data have been saved before quitting
-12.	Input functions to allow user to choose to quit without saving or return to menu
+1.	Exit program
+2.	Check if changes to data have been saved before quitting
+3.	Input functions to allow user to choose to quit without saving or return to menu
 
 #### User journey flows
 
+Understanding how the user is expected to navigate through the program further aids development.
 
+Flow #0 – Core: User opens program > Program opens default file > Program loads data from default file into program memory > Program displays current data to user in human-readable format > Program displays menu of options / functions to user: Add data, Save data, Quit program
+
+Flow #1 – Standard: User adds data > User saves data > User quits program
+
+Flow #2 – Changes made + No save: User adds data > User quits program (without saving)
+  * Quit program w/o change
+  * Return user to menu
+
+Flow #3 – No change + Save: User saves data (without making changes)
+  * Return user to menu
 
 #### Open file, Display data
 
