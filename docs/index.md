@@ -736,7 +736,7 @@ For this assignment and based on the limitations placed on the inputs of the use
 
 Start program / Open data file and display contents
 
-![Results of Test flow ID: 1](/images/test01.png "Results of Listing 13")#### Figure 1-1. Results from test: Start program
+![Results of Test flow ID: 1](/images/test01.png "Results of Listing 13") Figure 1-1. Results from test: Start program
 
 #### Results
 
@@ -761,7 +761,7 @@ Corey Schafter – YouTube, https://www.youtube.com/watch?v=NIWwJbo-9_8, 2022 (E
 
   * Notes: Clear, very concise instruction, Logical progression through content
 
-Socratica – YouTube, https://www.youtube.com/watch?v=nlCKrKGHSSk&t=10s, 2022 (External site): Exceptions in Python||Python Tutorial||Learn Python Programming
+Socratica – YouTube, https://www.youtube.com/watch?v=nlCKrKGHSSk&t=10s, 2022 (External site): Exceptions in Python - Python Tutorial - Learn Python Programming
 	
   * Notes: Fun, relevant, “more elaborate” example (opening .dat file)
 
