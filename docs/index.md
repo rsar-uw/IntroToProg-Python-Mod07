@@ -1,5 +1,5 @@
 # Python Script: VIP Birthdays
-*RSar, 2022.08.24
+*RSar, 2022.08.24*
 
 
 ## Prologue
@@ -9,26 +9,50 @@ In support of the adage "Don't Let 'Perfect' Be the Enemy of 'Good' ", this GitH
 
 ## Introduction
 
+I have concerns about the time requirements for this week’s assignment. In addition to the ‘normal’ assignment requirements, there is also an additional aspect of self-learning that will be needed. I think that one value I have found from the references provided to us so far is the “short cut” in time needed to “wade through” the vast amount of information available. There is a great quantity and wide spectrum in quality of content “in the wild” after all: *The net is vast and infinite.*
 
+Additionally, there have been unforeseen competing priorities that may manifest this weekend. So, to crash my own schedule (which, admittedly is less than ideal), my approach will be to learn this module’s lessons by starting with the assignment. Although I acknowledge that there are simpler (and still effective) ways to demonstrate one’s knowledge of this week’s content, I would like to try where practice, to both: simulate real-world time pressures / workloads and build upon the preceding weeks’ lessons. 
+
+So far, it’s still been fun though.
 
 ## Module assignment
 
-
-
 ### Requirements
 
+“Pickling + Exception handling" (Randall R., Assignment07_instructions.docx, Self-published, 2022).
 
+Use case demos:
+1.	Open file (file extension: .dat (binary))
+2.	Add data
+3.	Save (write data to binary file)
+4.	Quit
 
 ### Design
 
-
+This section includes the relevant components in the Python code that compose my proposed solution to the assignment.
 
 #### Program description
 
+Since the primary objective of this assignment is to demonstrate the requirements, I am building a “dummy” program as a base reference. The base reference program will be a birthday record keeper: “VIP Birthdays”.
 
+The program will record: Name, Relationship (a.k.a. circle), and Date of Birth (a.k.a., dob).
 
 #### Data structure
 
+I have found it helpful to know before coding what is the expected data structure and data file output. As the output is going to a binary file (.dat) – where the raw data in the file is not human readable – I’m not going to output as a comma-separated values (CSV) file. Since viewing the data requires the program to do, I’ll leave the extract-transform-load (ETL) workload to the program.
+
+```
+Name: alphanumeric, free-text
+	
+Circle: mutually exclusive, pre-defined groups: Family | Friend | Business | Other
+	
+DOB: yyyy-m-d
+```
+
+Due to increased documentation requirements (e.g., publishing to GitHub webpage), I will deprioritize development to the minimum code required to demonstrate use cases specified (Section 4.1).
+Where possible leverage existing code from prior assignment: A06-RSar.py
+
+Since there is no base code to start from for this assignment, I am using the template I had created in the prior assignment to structure the code for each module (Figure 9).
 
 
 #### Program architecture
@@ -109,4 +133,5 @@ Stack Overflow, https://stackoverflow.com/questions/16870663/how-do-i-validate-a
 ### Pickling
 
 DelfSatck, https://www.delftstack.com/howto/python/python-read-pickle/, 2022 (External site): Read a Pickle File Using Python
-Notes: Explicitly searched for solution on how to read all data from binary file.
+
+  * Notes: Explicitly searched for solution on how to read all data from binary file.
