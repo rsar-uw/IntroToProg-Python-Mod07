@@ -377,7 +377,58 @@ DATA ENTRY: Add new VIP
 
 #### Save data
 
+*Requirement 5: Allow user to save data.*
 
+The program begins by importing the pickle module: `import pickle`, which is needed for using the pickle function to ‘dump’ the data from the program into the file.
+
+When the user chooses option 2 (save data) from the menu, the program calls the `write_data_to_file` statement. If the value in the zero index of the `check_save_flag` array is zero, then the data has changed and has not been saved, so the program will proceed to save the file. If the `check_save_flag` array is one, then the `write_data_to_file` statement is not called and the program notifies the user with custom message: “ALERT: No changes detected.”
+
+Inside the `write_data_to_file` statement, the default file specified is opened in `wb` mode because the program is writing data to a binary file. The `pickle.dump(list_of_rows, file_obj)` pickle statement, takes the `vip_lst` list of dictionaries values passed via the `list_of_rows` list array and dumps the object data into the `file_obj` which is passed via the `working_file_str` parameter. Lastly, the `check_save_flag` is changed to 1 since the data has been saved and the program notifies the user: “Data saved.”
+
+```
+import pickle
+
+# Data ----------------------------------------------------------- #
+# Declare variables and constants
+
+default_file_str = 'AppData.dat'
+
+check_save_flag = [1]  # If = 1, then data saved/no changes, if = 0, changes \
+# not saved
+
+vip_lst = []
+
+# Processing  ---------------------------------------------------- #
+
+def write_data_to_file(working_file_str, list_of_rows):
+    file_obj = open(working_file_str, 'wb')
+    pickle.dump(list_of_rows, file_obj)
+    check_save_flag[0] = 1
+    print('Data saved.')
+    file_obj.close()
+
+# Presentation (Input/Output)  ----------------------------------- #
+
+# Main Body of Script  ------------------------------------------- #
+
+# Step 1 - When the program starts, Load file.
+
+# Step 2 - Display a menu of choices to the user
+
+while True:
+
+# Step 3 Show current data
+
+# Step 4 - Process user's menu choice
+
+elif choice_str == '2':  # Save Data to File
+    if check_save_flag[0] == 0:
+        write_data_to_file(working_file_str=default_file_str,
+                           list_of_rows=vip_lst)
+    else:
+        print('\nALERT: No changes detected.')
+    continue  # to show the menu
+```
 
 #### Quit program
 
