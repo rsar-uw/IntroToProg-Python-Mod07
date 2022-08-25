@@ -87,9 +87,11 @@ Similar to preceding assignments, I thought this week’s assignment was a signi
 ### Exception handling
 
 Corey Schafter – YouTube, https://www.youtube.com/watch?v=NIWwJbo-9_8, 2022 (External site): Python Tutorial: Using Try/Except Blocks for Error Handling
+
 	Notes: Clear, very concise instruction, Logical progression through content
 
 Socratica – YouTube, https://www.youtube.com/watch?v=nlCKrKGHSSk&t=10s, 2022 (External site): Exceptions in Python||Python Tutorial||Learn Python Programming
+	
 	Notes: Fun, relevant, “more elaborate” example (opening .dat file)
 
 Stack Overflow, https://stackoverflow.com/questions/2244270/get-a-try-statement-to-loop-around-until-correct-value-obtained, 2022 (External site): Get a Try statement to loop around until correct value obtained
@@ -97,6 +99,7 @@ Stack Overflow, https://stackoverflow.com/questions/2244270/get-a-try-statement-
 Stack Overflow, https://stackoverflow.com/questions/2083987/how-to-retry-after-exception, 2022 (External site):  How to retry after exception?
 
 TutorialKart, https://www.tutorialkart.com/python/python-range/python-if-in-range, 2022 (External site): Python – if in Range, if not in Range
+	
 	Notes: Explicitly searched for solution to loop input_vip_data_circle()
 
 Stack Overflow, https://stackoverflow.com/questions/16870663/how-do-i-validate-a-date-string-format-in-python, 2022 (External site): How do I validate a date string format in python?
