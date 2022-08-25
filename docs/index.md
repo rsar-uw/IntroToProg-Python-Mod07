@@ -107,6 +107,93 @@ The program begins by importing the pickle module: import pickle, which is neede
 
 The program calls the function `read_data_from_file()` where the string value (filename) assigned to the `default_file_str` variable is passed to the parameter `working_file_str`. The `vip_lst` list-variable is assigned to the output of the function.
 
+The function `read_data_from_file()` opens the filename string value passed to the `working_file_str` parameter in read mode for binary files ( `rb` ) and assigns the file object to `file_obj` variable. The `file_obj` variable is used as an input for the `pickle` function and `.load method`. The result of the function is to output a list with dictionary data type rows which is assigned to the list_of_rows variable.
+
+The overall structure of the `read_data_from_file` function follows this logic:
+1.	Try to open the `default_file_str` as working_file_str.
+2.	If file is not found, then return custom error message: “ERROR: File not found.”
+3.	If file is found, then try to extract data from file to `list_of_rows` variable with `pickle.load()` function and method.
+4.	`EOFError = End of file error`
+5.	`Return list_of_rows` variable with data from file.
+
+The `output_current_vip_in_list` function uses the output of the `read_data_from_file` function `list_of_rows` variable to pull each row value for `Name` and `Birthday` keys. At this point of the program, code is same as prior assignment for unpacking data from a list object with dictionary list as rows.
+
+```
+import pickle
+
+# Data ----------------------------------------------------------- #
+# Declare variables and constants
+
+default_file_str = 'AppData.dat'
+
+# Processing  ---------------------------------------------------- #
+
+def read_data_from_file(working_file_str):
+    try:
+        file_obj = open(working_file_str, 'rb')
+    except FileNotFoundError:
+        print('\nERROR: File not found.')
+    else:
+        try:
+            list_of_rows = pickle.load(file_obj)
+        except EOFError:
+            pass
+        else:
+            file_obj.close()
+            return list_of_rows
+
+# Presentation (Input/Output)  ----------------------------------- #
+
+def output_current_vip_in_list(list_of_rows):
+    print('''\n\t*********************************
+\tCurrent VIPs
+\t---------------------------------
+\tName \t\tBirthday
+\t\t\t(yyyy-m-d)
+\t---------------------------------''')
+
+    for row in list_of_rows:
+        print('\n\t' + row["Name"] +
+              '\t\t' + row["Birthday"],
+              end='')
+
+    print('\n\t*********************************')
+
+# Main Body of Script  ------------------------------------------- #
+
+# Step 1 - When the program starts, Load file.
+
+vip_lst = read_data_from_file(working_file_str=default_file_str)
+
+# Step 2 - Display a menu of choices to the user
+
+while True:
+
+# Step 3 Show current data
+
+print('''
+=====================================
+DISPLAY DATA
+=====================================''')
+
+    # Step 3 Show current data
+    output_current_vip_in_list(list_of_rows=vip_lst)
+
+# Step 4 – Process user’s menu choice
+
+if choice_str.strip() == '1':  # Add a new Task
+
+continue
+
+elif choice_str.strip() == '2':  # Save Data to File
+
+continue  # to show the menu
+
+elif choice_str.strip() == '3':  # Exit Program
+
+break  # exit Menu loop
+```
+
 #### Menu
 
 
