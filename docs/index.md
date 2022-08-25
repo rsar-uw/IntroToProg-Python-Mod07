@@ -736,7 +736,7 @@ For this assignment and based on the limitations placed on the inputs of the use
 
 Start program / Open data file and display contents
 
-![Results of Test flow ID: 1](\images\test01.png "Results of Listing 13")#### Figure 1-1. Results from test: Start program
+![Results of Test flow ID: 1](/images/test01.png "Results of Listing 13")#### Figure 1-1. Results from test: Start program
 
 #### Results
 
