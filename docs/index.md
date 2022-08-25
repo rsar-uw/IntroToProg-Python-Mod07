@@ -12,3 +12,10 @@ In support of the adage "Don't Let 'Perfect' Be the Enemy of 'Good' ", this GitH
 
 ## Module assignment
 
+## Summary
+
+## References
+
+### Exception handling
+
+### Pickling
