@@ -790,7 +790,7 @@ Add data
 
 Results from test cases all passed as the actual result matched what I was expecting for each of the value combinations input.
 
-### Execution
+### Production
 
 For the purpose of this assignment, execution is done via the Terminal which simulates executing in Production environment (PROD) as running the program in PyCharm IDE simulates testing environment (TEST).
 
