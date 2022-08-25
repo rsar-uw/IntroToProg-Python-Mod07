@@ -54,10 +54,29 @@ Where possible leverage existing code from prior assignment: A06-RSar.py
 
 Since there is no base code to start from for this assignment, I am using the template I had created in the prior assignment to structure the code for each module (Figure 9).
 
-
 #### Program architecture
 
+Following lessons from Module06 (Randall R., Mod6PythonProgrammingNotes.docx, Self-published, 2019), efforts will be made to follow principles of abstraction and separation of concerns.
 
+I have found it helpful to plan out in advance (at least at a high-level), how to organize requirements into features, and the order in which to develop components, integrate, and then iterate further.
+
+Module: Add
+1.	Manually create default output file
+2.	Write data to default output file
+3.	Verify data is being written (i.e., open default output file in text editor, note before / after changes)
+4.	Input functions to allow user to enter data
+5.	Exception catching
+
+Module: Load
+6.	Open default output file
+7.	Read raw data from default output file
+8.	Display data from default output file
+9.	Exception catching
+
+Module: Quit
+10.	Exit program
+11.	Check if changes to data have been saved before quitting
+12.	Input functions to allow user to choose to quit without saving or return to menu
 
 #### User journey flows
 
