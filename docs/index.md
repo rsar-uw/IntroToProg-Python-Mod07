@@ -88,11 +88,11 @@ Similar to preceding assignments, I thought this week’s assignment was a signi
 
 Corey Schafter – YouTube, https://www.youtube.com/watch?v=NIWwJbo-9_8, 2022 (External site): Python Tutorial: Using Try/Except Blocks for Error Handling
 
-	Notes: Clear, very concise instruction, Logical progression through content
+  * Notes: Clear, very concise instruction, Logical progression through content
 
 Socratica – YouTube, https://www.youtube.com/watch?v=nlCKrKGHSSk&t=10s, 2022 (External site): Exceptions in Python||Python Tutorial||Learn Python Programming
 	
-	Notes: Fun, relevant, “more elaborate” example (opening .dat file)
+  * Notes: Fun, relevant, “more elaborate” example (opening .dat file)
 
 Stack Overflow, https://stackoverflow.com/questions/2244270/get-a-try-statement-to-loop-around-until-correct-value-obtained, 2022 (External site): Get a Try statement to loop around until correct value obtained
 
@@ -100,10 +100,11 @@ Stack Overflow, https://stackoverflow.com/questions/2083987/how-to-retry-after-e
 
 TutorialKart, https://www.tutorialkart.com/python/python-range/python-if-in-range, 2022 (External site): Python – if in Range, if not in Range
 	
-	Notes: Explicitly searched for solution to loop input_vip_data_circle()
+  * Notes: Explicitly searched for solution to loop input_vip_data_circle()
 
 Stack Overflow, https://stackoverflow.com/questions/16870663/how-do-i-validate-a-date-string-format-in-python, 2022 (External site): How do I validate a date string format in python?
-Notes: Explicitly searched for solution to validate input_vip_data_dob()
+
+  * Notes: Explicitly searched for solution to validate input_vip_data_dob()
 
 ### Pickling
 
